@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitenkarte: Niklas Hennig</title>
+    <link rel="stylesheet" href="Visitenkartestyle.css">
+    <meta name="description" content="Auf dieser Website stelle ich mich vor."> <!--Fügt der Seite eine Beschreibung zu. Wichtig für Internetdienste-->
+    <meta name="viewport" content="width=device width, initial-scale=1.0"> <!--Definiert die Darstellungsbreite und- skalierung auf mobilen Geräten-->
+</head>
+<body>
+<header>
+    <h1>Meine Online Visitenkarte</h1>
+</header>
+<nav class="flex">
+    <ul>
+        <li>
+            <a href="#Stammdaten">1.Stammdaten</a>
+        </li>
+        <li>
+            <a href="#Selbstbeschreibung">2. Selbstbeschreibung</a>
+        </li>
+        <li>
+            <a href="#Kontaktformular">3. Konaktformular</a>
+        </li>
+        <li>
+            <a href="#Projekte">4. Meine Projekte</a>
+        </li>
+    </ul>
+    <!--Navigations Sektion, die dazu dient zu jeden Teilabschnitt zu springen-->
+</nav>
+<main>
+    <article id="Stammdaten">
+        <h2>1. Stammdaten</h2>
+        <section class="flex">
+            <p>Name: Niklas Hennig</p>
+            <dl> <!--Definitionsliste-->
+                <dt>Kontaktdaten:</dt>
+                <dd>Adresse: Softwarepark 23, 4232 Hagenberg</dd>
+                <dd>Telefon: +49 173 2422281</dd>
+                <dd>E-Mail: s2300238007@fhooe.at</dd>
+            </dl>
+            <img src="../Image/6__.jpg" alt="Mein Profilbild" class="fluid">
+        </section>
+    </article>
+    <article id="Selbstbeschreibung">
+        <h2>2. Selbstbeschreibung</h2>
+        <section>
+            Ich studiere zurzeit Informatik im 5. Semester an der Universität in Hagenberg. In den letzten zwei Jahren habe ich bereits viele Erfahrungen in den Sprachen: Python, C++,
+            HTML und CSS machen können. In einen Jahr werde ich meine Bachelor Arbeit absolvieren und somit mein Studium erfolgreich beenden.
+            Wenn ich gerade nicht Studiere gehe ich gerne Schwimmen und Spiele Videospiele.
+        </section>
+    </article>
+    <article id="Kontaktformular">
+        <h2>3. Kontaktformular</h2>
+        <form>
+            <!--Innerhalb von <form> wird das Kontaktformular beschrieben. Darin enthalten sind die Label, die Textarea und die Buttons-->
+            <section class="flex">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" required>
+            </section>
+            <section class="flex">
+                <label for="E-Mail">E-Mail</label>
+                <input id="E-Mail" type="email" name="E-Mail" required>
+            </section>
+            <section class="flex">
+                <label for="Art">Art der Anfrage</label>
+                <select id="Art" name="Art">
+                    <option value="Geschäftlich">Geschäftlich</option>
+                    <option value="Privat">Privat</option>
+                </select>
+            </section>
+            <section class="flex">
+                <p>Nachricht an mich</p>
+                <textarea name="description"></textarea>
+            </section>
+            <button type="submit">Absenden</button>
+            <button type="reset">Löschen</button>
+        </form>
+    </article>
+    <article id="Projekte">
+        <h2>4. Meine Projekte</h2>
+        <div class="grid-container">
+            <!--Hier werden meine Programmierprojekte dargestellt. Um sie besser auf der Seite zu verteilen benutze ich den Grid-Container-->
+            <div class="grid-item">
+                <p>Mein erstes Projekt bezieht sich auf ein Pythonprogramm,
+                    das bestimmen kann, wie viele einsen in einer Zahl stecken.</p>
+                <img src="../Image/Python1.png/" alt="Python1" class="clip"> <!--class="clip" ist für kleinere Bilder, die ich etwas größer skalieren musste-->
+            </div>
+            <div class="grid-item"> <!--Definition eines einzelnen Items im Grid-Container-->
+                <p>Das war meine erste selbst erstellte Website.</p>
+                <img src="../Image/Website.png/" alt="Website" class="tiny"> <!--class="tiny" ist für besonders kleine Bilder, die mit clip immer noch zu klein wären-->
+            </div>
+            <div class="grid-item">
+                <p>Dieses Programm steuert ein selbfahrendes Auto.</p>
+                <img src="../Image/Autonom.png/" alt="Autonom" class="tiny">
+
+            </div>
+            <div class="grid-item">
+                <p>Datenbankprogramm, das Autoren zu ihren Büchern zuweist</p>
+                <img src="../Image/Datenbanken.png" alt="Datenbanken" class="clip">
+            </div>
+            <div class="grid-item">
+                <p>Pythonprogramm das mithilfe der Binären Suche, die Qudratwurzel einer Zahl ermitteln kann.</p>
+                <img src="../Image/Binäre%20Suche.png" alt="Binäresuche" class="tiny">
+            </div>
+            <div class="grid-item">
+                <p>Objekorientierte Programmierung am Beispiel eines Ponyhofes</p>
+                <img src="../Image/OOP.png" alt="OOP" class="clip">
+            </div>
+        </div>
+
+    </article>
+</main>
+<footer class="flex">
+    <p>Autor: Niklas Hennig</p>
+</footer>
+</body>
+</html>

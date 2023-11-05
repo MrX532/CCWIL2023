@@ -1,0 +1,87 @@
+:root{
+    --colorb: #222222;
+    --colort: #46A384;
+    --colordt: #005252;
+    --colorbl: #001D4F;
+    --colorhb: #4686A3;
+    --colorw: white;
+    background-color: #222222;
+}
+header{
+    color: var(--colorw);
+    font-family: "Times New Roman", Times, serif;
+    /*Bestimmt die Schriftart des Textes im Header*/
+    font-size: 40px;
+    background-color: var(--colorb);
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    color: var(--colorw);
+    font-size: 40px;
+}
+a{
+    color: var(--colorhb);
+}
+nav{
+    display: flex;
+    padding: 0.1em;
+    background-color: var(--colorbl);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px;
+}
+.fluid {
+    max-width: 10%;
+}
+.clip{
+    max-width: 70%;
+}
+.tiny{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+section{
+    padding: 15px;
+}
+article {
+    padding: 30px;
+    color: var(--colorw);
+    font-family: "Times New Roman", Times, serif;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+}
+main{
+    background-image: linear-gradient(to bottom, var(--colort)0%, var(--colordt)60%);
+    /*Dieser Programmcode fügt einen Farbverlauf über den gesamten Main Bereich ein.*/
+}
+footer{
+    background-color: var(--colorb);
+    color: var(--colorw);
+}
+@media only screen and (max-width: 800px){
+    section{
+        display: flex;
+        flex-direction: column;
+        /*Ist dazu da um festzulegen, wie das Programm auf einen mobilen Endgerät aussehen soll.
+        Sorgt dafür, dass label und Input in der mobilen Ansicht untereinander stehen */
+    }
+}
+.grid-container{
+    display: grid;
+    gap: 50px 100px; /*Größe der Ränder zwischen den einzelnen grid-items.
+    Erste Zahl bestimmt den Zeilenabstand und die zweite den Spaltenabstand.*/
+    grid-template-columns: auto auto auto; /*Erstellt genau 3 Spalten*/
+    padding: 10px;
+}
+.grid-item{
+    padding: 20px;
+    text-align: center;
+}

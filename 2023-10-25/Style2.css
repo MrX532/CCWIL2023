@@ -1,0 +1,47 @@
+:root{
+    --color1: #5FFABA;
+    --color2: #3BCAFA;
+    --color3: #00F5E3;
+    --color4: #0CF747;
+    --color5: #026DF7;
+}
+nav{
+    background-color: var(--color1);
+    padding: 0.1em;
+}
+nav a{
+    color: white;
+}
+nav a:before {
+    content: ' ';
+    background-image: url('../Image/Arrow.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px;
+    background-position: center;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+form.flex > * {
+    flex: 1 1 250px;
+}
+form.flex {
+    justify-content: space-between;
+    padding: 0.1em;
+}

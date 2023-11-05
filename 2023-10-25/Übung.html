@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Übung 2</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href= "#listExample">Listen Beispiele</a>
+        </li>
+        <li>
+        <a href= "#formular">Formular Beisiel</a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <h1>Übung 2</h1>
+    <article id ="listExample">
+        <h2>Listen Beispiele</h2>
+        <div class="flex">
+            <section>
+                <h3>Ordered List</h3>
+                <ol type="1" start="1">
+                    <li>Item 1
+                        <ul type="square">
+                            <li>Item 1.1</li>
+                            <li>Item 1.2</li>
+                        </ul>
+                    </li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Definition List</h3>
+                <dl>
+                    <dt>Vorspeise</dt>
+                    <dd>Salat</dd>
+                    <dd>Suppe</dd>
+                    <dt>Hauptspeise</dt>
+                    <dd>Menü 1</dd>
+                    <dd>Vegetarisch Menü 2</dd>
+                    <dd>Vegan: Salat ohne Dressing</dd>
+                    <dt>Nachspeise</dt>
+                    <dd>Kuchen</dd>
+                </dl>
+            </section>
+        </div>
+    </article>
+    <article id="formular">
+        <h2>Formular</h2>
+        <form>
+            <section class="flex">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name">
+            </section>
+            <section class="flex">
+                <label for="inputPassword">Password</label>
+                <input id="inputPassword" type="password" name="inputPassword">
+            </section>
+        </form>
+    </article>
+</main>
+</body>
+</html>
